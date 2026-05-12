@@ -203,10 +203,34 @@ body {
 
 <!-- ===== 导航 ===== -->
 <div class="nav" id="nav">
-  <a href="#plans" class="active">会员方案</a>
+  <a href="#trial" class="active">单次体验</a>
+  <a href="#plans">会员方案</a>
   <a href="#compare">服务对比</a>
   <a href="#process">合作流程</a>
   <a href="#about">关于我们</a>
+</div>
+
+<!-- ===== ¥999 单次体验卡（置顶引流） ===== -->
+<div class="section" id="trial" style="padding-top:20px;">
+  <div style="max-width:600px; margin:0 auto;">
+    <div style="background:linear-gradient(135deg, #f0f9ff, #e0f2fe); border:2px dashed #38bdf8; border-radius:16px; padding:32px 24px; text-align:center;">
+      <div style="font-size:14px; color:#0369a1; margin-bottom:6px;">🆕 新客户专享 · 无需年费</div>
+      <h3 style="font-size:28px; font-weight:800; color:#0c4a6e; margin-bottom:4px;">¥999 单次服务体验卡</h3>
+      <p style="font-size:14px; color:#0284c7; margin-bottom:16px;">花一杯茶钱，体验一次完整专业财税服务</p>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:20px;">
+        <span style="background:white; border-radius:20px; padding:6px 14px; font-size:12px; color:#0369a1; font-weight:500;">🔍 企业财务全面体检+报告解读</span>
+        <span style="background:white; border-radius:20px; padding:6px 14px; font-size:12px; color:#0369a1; font-weight:500;">📊 税负深度分析+优化建议</span>
+        <span style="background:white; border-radius:20px; padding:6px 14px; font-size:12px; color:#0369a1; font-weight:500;">⚠️ 稽查风险预评估</span>
+        <span style="background:white; border-radius:20px; padding:6px 14px; font-size:12px; color:#0369a1; font-weight:500;">📋 股权转让税务方案（简版）</span>
+        <span style="background:white; border-radius:20px; padding:6px 14px; font-size:12px; color:#0369a1; font-weight:500;">🧪 研发加计扣除申报辅导</span>
+      </div>
+      <p style="font-size:12px; color:#0891b2; margin-bottom:16px;">5大服务任选1项 · 含30分钟在线解读 · 不满意无条件退款</p>
+      <a href="https://weixin.qq.com" class="btn" style="display:inline-flex; align-items:center; gap:6px; background:#0284c7; color:white; font-size:16px; padding:14px 40px;" onclick="alert('请添加微信：hongchunyu042896 选择您需要的服务')">
+        💬 添加微信咨询
+      </a>
+      <p style="font-size:11px; color:#7dd3fc; margin-top:10px;">体验满意后，¥999可抵扣铜级/银级首年费用</p>
+    </div>
+  </div>
 </div>
 
 <!-- ===== 会员方案 ===== -->
@@ -220,25 +244,27 @@ body {
     <!-- 铜级 -->
     <div class="plan">
       <div class="plan-header">
+        <a href="https://sparrow528.github.io/copper-toolbox/" target="_blank" style="text-decoration:none;color:inherit;display:block;">
         <div class="level copper">🥉 铜级 · 基础护航</div>
         <div class="price">¥5,999 <small>/年</small></div>
         <div class="unit">≈ ¥500/月</div>
-        <div class="target">初创 / 小微企业 · 年营收 &lt;500万</div>
+        <div class="target"><span style="background:#fef3c7; color:#b45309; padding:2px 8px; border-radius:4px; font-size:11px;">⛔ 年营收&lt;500万</span></div>
+        </a>
       </div>
       <div class="plan-body">
         <ul>
           <li><span class="icon">✓</span> 月度/季度纳税申报审核</li>
           <li><span class="icon">✓</span> 发票使用合规性基础检查</li>
-          <li><span class="icon">✓</span> 3大铜级专属检测工具（税务风险体检/利润税负测算/社保个税检查）</li>
+          <li><span class="icon">✓</span> <b>3大铜级专属检测工具</b><br><span style="font-size:11px;color:#999">税务风险体检 · 利润税负测算 · 社保个税检查</span></li>
+          <li><span class="icon">✓</span> 重点风险预警</li>
           <li><span class="icon">✓</span> 线上财税咨询（10次/年）</li>
-          <li><span class="icon">✓</span> 重点风险预警（零申报/税负率异常）</li>
           <li><span class="icon">✓</span> 年度税务健康检查</li>
-          <li><span class="icon">✓</span> 稽查初步应对话术指导</li>
           <li><span class="icon">✓</span> 财税政策月度简报</li>
+          <li><span class="icon">✓</span> 稽查初步应对话术指导</li>
           <li><span class="icon">✓</span> 48小时内响应</li>
           <li class="no"><span class="icon">✗</span> 上门服务</li>
-          <li class="no"><span class="icon">✗</span> 税负优化方案</li>
-          <li class="no"><span class="icon">✗</span> 稽查现场陪护</li>
+          <li class="no"><span class="icon">✗</span> 税负分析报告</li>
+          <li class="no"><span class="icon">✗</span> 专项筹划</li>
         </ul>
       </div>
       <div class="plan-footer">
@@ -250,24 +276,29 @@ body {
     <div class="plan popular">
       <div class="badge">🔥 主力推荐</div>
       <div class="plan-header">
+        <a href="https://sparrow528.github.io/silver-toolbox/" target="_blank" style="text-decoration:none;color:inherit;display:block;">
         <div class="level silver">🥈 银级 · 专业合规</div>
         <div class="price">¥29,999 <small>/年</small></div>
         <div class="unit">≈ ¥2,500/月</div>
-        <div class="target">成长型企业 · 年营收 500万~5000万</div>
+        <div class="target">成长型企业 · 年营收 500万~5000万 · <span style="background:#e8f0fe; color:#1a73e8; padding:2px 8px; border-radius:4px; font-size:11px;">推荐</span></div>
+        </a>
       </div>
       <div class="plan-body">
         <ul>
           <li><span class="icon">✓</span> 铜级全部基础服务</li>
+          <li><span class="icon">✓</span> <b>6大银级专属检测工具</b><br><span style="font-size:11px;color:#999">税负自查·现金流·稽查自测·发票自检<br>汇算清缴·成本费用分析</span></li>
           <li><span class="icon">✓</span> 增值税/所得税/附加税全流程复核</li>
-          <li><span class="icon">✓</span> 季度税负波动分析与优化建议</li>
-          <li><span class="icon">✓</span> 每季度1次上门/视频会议</li>
-          <li><span class="icon">✓</span> 财务制度初建（费用报销/开票流程）</li>
-          <li><span class="icon">✓</span> 代账公司记账凭证质量审核</li>
+          <li><span class="icon">✓</span> 季度税负波动分析与优化建议报告</li>
+          <li><span class="icon">✓</span> 每季度1次上门（含凭证审核+模拟检查+季度会议）</li>
+          <li><span class="icon">✓</span> 代账公司记账凭证质量审核（季度）</li>
+          <li><span class="icon">✓</span> 财务制度初建</li>
           <li><span class="icon">✓</span> 专项筹划（每年2项，任选）</li>
-          <li><span class="icon">✓</span> 协助准备稽查备查资料</li>
+          <li><span class="icon">✓</span> 协助准备稽查备查资料（线上指导）</li>
           <li><span class="icon">✓</span> 年度模拟税务检查</li>
-          <li><span class="icon">✓</span> 季度财税风险报告</li>
           <li><span class="icon">✓</span> 7×12小时专属顾问群（8:00~20:00）</li>
+          <li><span class="icon">✓</span> 季度财税风险报告</li>
+          <li><span class="icon">✓</span> 线上财税咨询不限次</li>
+          <li><span class="icon">✓</span> 24小时内响应</li>
         </ul>
       </div>
       <div class="plan-footer">
@@ -278,24 +309,28 @@ body {
     <!-- 金级 -->
     <div class="plan">
       <div class="plan-header">
+        <a href="https://sparrow528.github.io/gold-toolbox/" target="_blank" style="text-decoration:none;color:inherit;display:block;">
         <div class="level gold">🥇 金级 · 战略增长</div>
         <div class="price">¥69,999 <small>/年</small></div>
         <div class="unit">≈ ¥5,833/月</div>
         <div class="target">成熟企业 · 年营收 5000万+</div>
+        </a>
       </div>
       <div class="plan-body">
         <ul>
           <li><span class="icon">✓</span> 银级全部核心服务</li>
+          <li><span class="icon">✓</span> <b>11大金级专属检测工具</b><br><span style="font-size:11px;color:#999">股权架构·并购重组·跨境税务·研发全流程<br>个税优化·稽查预案·内控自评·税收优惠等</span></li>
           <li><span class="icon">✓</span> 股权架构设计与优化</li>
           <li><span class="icon">✓</span> 业务分拆/合并税务路径规划</li>
           <li><span class="icon">✓</span> 员工股权激励（ESOP）税务方案</li>
           <li><span class="icon">✓</span> 并购重组税务尽调（轻量版）</li>
           <li><span class="icon">✓</span> 投融资协议税务条款审阅</li>
-          <li><span class="icon">✓</span> 7×12小时专属顾问群</li>
-          <li><span class="icon">✓</span> 紧急事项4小时书面意见</li>
+          <li><span class="icon">✓</span> 7×12小时专属顾问群（8:00~20:00,全年无休）</li>
+          <li><span class="icon">✓</span> 紧急事项4小时书面意见（Word/PDF）</li>
+          <li><span class="icon">✓</span> 专项筹划（每年2项，8选2）</li>
           <li><span class="icon">✓</span> 税务稽查现场陪护（差旅另计）</li>
-          <li><span class="icon">✓</span> 每年2次高管财税内训</li>
-          <li><span class="icon">✓</span> 年度税务风险内控手册</li>
+          <li><span class="icon">✓</span> 高管财税内训（每年2次）</li>
+          <li><span class="icon">✓</span> 年度税务风险内控手册（10~20页）</li>
         </ul>
       </div>
       <div class="plan-footer">
@@ -320,21 +355,28 @@ body {
       <span style="color:#b8860b">🥇金级</span>
     </div>
     <div class="compare-row"><span class="service-name">纳税申报审核</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">铜级专属检测工具（3个）</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">银级专属检测工具（6个）</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">金级专属检测工具（11个）</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
     <div class="compare-row"><span class="service-name">发票合规性检查</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">线上财税咨询</span><span class="detail">10次/年</span><span class="yes">不限</span><span class="yes">不限+专属群</span></div>
-    <div class="compare-row"><span class="service-name">风险预警（零申报/税负率异常）</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">重点风险预警</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">线上财税咨询</span><span class="detail">10次/年</span><span class="yes">不限次</span><span class="yes">不限次+紧急4h书面意见</span></div>
+    <div class="compare-row"><span class="service-name">上门服务</span><span class="no">—</span><span class="detail">季度1次</span><span class="detail">每月1次</span></div>
+    <div class="compare-row"><span class="service-name">税负分析报告</span><span class="no">—</span><span class="detail">季度</span><span class="detail">季度</span></div>
+    <div class="compare-row"><span class="service-name">财税风险报告</span><span class="no">—</span><span class="detail">季度</span><span class="detail">季度</span></div>
+    <div class="compare-row"><span class="service-name">专项筹划</span><span class="no">—</span><span class="detail">2项/年</span><span class="detail">2项/年</span></div>
+    <div class="compare-row"><span class="service-name">年度内控手册</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">稽查现场陪护</span><span class="no">—</span><span class="no">—</span><span class="detail">✓（差旅另计）</span></div>
+    <div class="compare-row"><span class="service-name">高管内训</span><span class="no">—</span><span class="no">—</span><span class="detail">2次/年</span></div>
     <div class="compare-row"><span class="service-name">年度税务健康检查</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
     <div class="compare-row"><span class="service-name">财税政策月度简报</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">稽查初步应对话术指导</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">稽查应对话术指导</span><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
+    <div class="compare-row"><span class="service-name">响应时效</span><span class="detail">48h</span><span class="detail">24h</span><span class="detail">4h紧急</span></div>
     <div class="compare-row"><span class="service-name">增值税/所得税全流程复核</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
     <div class="compare-row"><span class="service-name">季度税负分析与优化建议</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">上门/视频会议</span><span class="no">—</span><span class="detail">季度1次</span><span class="detail">每月1次</span></div>
     <div class="compare-row"><span class="service-name">财务制度初建</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">代账公司凭证质量审核</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">专项筹划</span><span class="no">—</span><span class="detail">2项/年</span><span class="detail">2项/年(高级别)</span></div>
+    <div class="compare-row"><span class="service-name">代账公司凭证质量审核</span><span class="no">—</span><span class="detail">季度</span><span class="detail">季度</span></div>
     <div class="compare-row"><span class="service-name">模拟税务检查</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">季度财税风险报告</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">响应时效</span><span class="detail">48h</span><span class="detail">24h</span><span class="detail">4h紧急</span></div>
     <div class="compare-row"><span class="service-name">股权架构设计与优化</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
     <div class="compare-row"><span class="service-name">业务分拆/合并税务路径</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
     <div class="compare-row"><span class="service-name">ESOP股权激励税务方案</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
@@ -342,9 +384,6 @@ body {
     <div class="compare-row"><span class="service-name">并购重组税务尽调</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
     <div class="compare-row"><span class="service-name">7×12小时专属顾问群</span><span class="no">—</span><span class="yes">✓</span><span class="yes">✓</span></div>
     <div class="compare-row"><span class="service-name">紧急事项4小时书面意见</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
-    <div class="compare-row"><span class="service-name">税务稽查现场陪护</span><span class="no">—</span><span class="no">—</span><span class="detail">✓（差旅另计）</span></div>
-    <div class="compare-row"><span class="service-name">高管财税内训</span><span class="no">—</span><span class="no">—</span><span class="detail">2次/年</span></div>
-    <div class="compare-row"><span class="service-name">年度税务风险内控手册</span><span class="no">—</span><span class="no">—</span><span class="yes">✓</span></div>
   </div>
 </div>
 
@@ -406,9 +445,12 @@ body {
 <div class="cta-section">
   <h2>让专业财税顾问为您的企业保驾护航</h2>
   <p>添加微信 hongchunyu042896，免费咨询适合您的会员方案</p>
-  <a href="https://sparrow528.github.io/checkup/" class="btn" target="_blank">👉 免费体验 · 企业财务健康体检</a>
-  <a href="https://sparrow528.github.io/tax-checkup/" class="btn" target="_blank" style="margin-left:8px">👉 免费体验 · 企业税负自查</a>
-  <a href="https://sparrow528.github.io/rd-full-process/" class="btn" target="_blank" style="margin-left:8px">👉 免费体验 · 研发费用合规自查</a>
+  <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+    <a href="https://sparrow528.github.io/checkup/" class="btn" target="_blank">👉 免费 · 财务健康体检</a>
+    <a href="https://sparrow528.github.io/tax-checkup/" class="btn" target="_blank">👉 免费 · 企业税负自查</a>
+    <a href="https://sparrow528.github.io/rd-checkup/" class="btn" target="_blank">👉 免费 · 研发费用自查</a>
+    <a href="https://sparrow528.github.io/radar-chart/" class="btn" target="_blank">👉 免费 · 财税雷达图</a>
+  </div>
 </div>
 
 <!-- ===== Footer ===== -->
