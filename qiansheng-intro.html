@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>乾坤生会计师事务所 · 简介</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:#f5f7fa;color:#333;padding:16px 16px 40px
+}
+.page{max-width:480px;margin:0 auto}
+
+/* 封面 */
+.cover-card{
+  background:linear-gradient(135deg,#1a365d 0%,#2a5298 60%,#1e3a6f 100%);
+  border-radius:20px;padding:40px 24px 32px;text-align:center;
+  color:#fff;margin-bottom:16px;position:relative;overflow:hidden
+}
+.cover-card::before{
+  content:'';position:absolute;bottom:-30px;right:-30px;
+  width:140px;height:140px;border-radius:50%;
+  background:rgba(255,255,255,.04)
+}
+.cover-card .logo{font-size:48px;margin-bottom:12px}
+.cover-card h1{font-size:24px;font-weight:800;letter-spacing:2px;margin-bottom:4px}
+.cover-card .sub{font-size:13px;opacity:.75;margin-bottom:16px}
+.cover-card .divider{width:50px;height:3px;background:linear-gradient(90deg,#c9a84c,#f0d878);margin:0 auto 16px;border-radius:2px}
+.cover-card .tag-20{
+  display:inline-block;background:linear-gradient(90deg,#c9a84c,#f0d878);
+  color:#1a365d;font-weight:700;font-size:13px;padding:5px 18px;
+  border-radius:16px;margin-bottom:14px
+}
+.cover-card .info-row{display:flex;justify-content:center;gap:10px;font-size:12px;opacity:.85;flex-wrap:wrap}
+.cover-card .info-row span{background:rgba(255,255,255,.1);padding:4px 12px;border-radius:10px}
+
+/* 通用卡片 */
+.card{
+  background:#fff;border-radius:16px;padding:24px 20px;
+  margin-bottom:12px;box-shadow:0 1px 8px rgba(0,0,0,.04)
+}
+.card-title{
+  font-size:17px;font-weight:700;color:#1a365d;
+  padding-bottom:10px;margin-bottom:14px;
+  border-bottom:2px solid #1a365d;position:relative
+}
+.card-title::after{
+  content:'';position:absolute;bottom:-2px;left:0;
+  width:40px;height:2px;background:#c9a84c
+}
+
+/* 数据卡片 */
+.stat-row{display:flex;gap:10px;margin-bottom:14px}
+.stat-item{flex:1;background:#f0f4ff;border-radius:12px;padding:14px 8px;text-align:center}
+.stat-item .num{font-size:24px;font-weight:800;color:#2a5298}
+.stat-item .label{font-size:12px;color:#666;margin-top:2px}
+
+/* 列表 */
+.list-item{
+  display:flex;align-items:flex-start;gap:10px;
+  padding:10px 0;border-bottom:1px solid #f5f5f5;font-size:14px;color:#444
+}
+.list-item:last-child{border-bottom:none}
+.list-item .icon{flex-shrink:0;font-size:18px}
+
+/* 标签展示 */
+.tag-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{font-size:12px;padding:4px 12px;border-radius:14px;background:#edf2f7;color:#4a5568}
+
+/* 期刊模块 */
+.journal-box{
+  background:#f0f4ff;border-radius:12px;padding:16px;margin-top:8px
+}
+.journal-box .j-name{
+  font-size:16px;font-weight:700;color:#1a365d;margin-bottom:4px
+}
+.journal-box .j-name span{
+  display:inline-block;font-size:11px;background:#fef3c7;color:#92400e;
+  padding:2px 10px;border-radius:10px;margin-left:6px;vertical-align:middle
+}
+.journal-box .j-desc{font-size:13px;color:#555;line-height:1.6;margin-bottom:8px}
+.journal-box .j-detail{font-size:12px;color:#888}
+.journal-box .j-detail .row{padding:4px 0;display:flex}
+.journal-box .j-detail .row .lbl{width:80px;flex-shrink:0;color:#999}
+
+/* 尾注 */
+.footer-note{text-align:center;padding:16px;font-size:12px;color:#999}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- 封面 -->
+<div class="cover-card">
+  <div class="logo">🏢</div>
+  <h1>北京乾坤生会计师事务所</h1>
+  <div class="sub">Beijing Qiansheng CPAs · 审计 · 会计 · 税务</div>
+  <div class="divider"></div>
+  <div class="tag-20">🎉 2006 — 2026 · 二十周年</div>
+  <div class="info-row">
+    <span>👤 洪钟吉</span>
+    <span>📋 洪明子</span>
+    <span>📰 洪淳宇</span>
+  </div>
+</div>
+
+<!-- 公司概况 -->
+<div class="card">
+  <div class="card-title">公司概况</div>
+  <div style="font-size:14px;color:#555;line-height:1.7;margin-bottom:14px">
+    北京乾坤生会计师事务所有限责任公司成立于<strong>2006年</strong>，深耕财税服务领域二十载。服务覆盖内资企业及外资企业，凭借专业能力和行业经验积累了一批稳定客户。
+  </div>
+  <div class="stat-row">
+    <div class="stat-item"><div class="num">2006</div><div class="label">成立年份</div></div>
+    <div class="stat-item"><div class="num">20</div><div class="label">年行业积淀</div></div>
+    <div class="stat-item"><div class="num">10+</div><div class="label">行业覆盖</div></div>
+  </div>
+  <div class="list-item"><span class="icon">📋</span><div><strong>主营业务</strong><br><span style="font-size:12px;color:#888">年度审计 · 专项审计 · 记账报税 · 税务咨询 · 财税健康检查 · 稽查应对指导</span></div></div>
+  <div class="list-item"><span class="icon">🏭</span><div><strong>服务行业</strong><br><span style="font-size:12px;color:#888">商贸零售 · 制造业 · 科技 · 文化传媒 · 国际物流 · 健康管理 · 高球 · 教育 · 咨询</span></div></div>
+  <div class="list-item"><span class="icon">🌐</span><div><strong>客户类型</strong><br><span style="font-size:12px;color:#888">内资企业 + 外资企业（韩资企业为主）</span></div></div>
+</div>
+
+<!-- 核心团队 -->
+<div class="card">
+  <div class="card-title">核心团队</div>
+  <div class="list-item"><span class="icon">👤</span><div><strong>洪钟吉</strong><br><span style="font-size:12px;color:#888">公司负责人 / 联系人</span></div></div>
+  <div class="list-item"><span class="icon">👩‍💼</span><div><strong>洪明子</strong><br><span style="font-size:12px;color:#888">责任会计 · 记账及税务申报核心人员</span></div></div>
+  <div class="list-item"><span class="icon">📰</span><div><strong>洪淳宇</strong><br><span style="font-size:12px;color:#888">高级管理会计师 · 税务师 · 国际审计师 · 协会监事<br>《乾坤财税观察》主编 · 18年财税实战经验</span></div></div>
+  <div class="tag-row">
+    <span class="tag">商贸零售</span>
+    <span class="tag">制造业</span>
+    <span class="tag">科技</span>
+    <span class="tag">文化传媒</span>
+    <span class="tag">国际物流</span>
+    <span class="tag">健康管理</span>
+    <span class="tag">韩资企业</span>
+  </div>
+</div>
+
+<!-- 品牌期刊 -->
+<div class="card">
+  <div class="card-title">品牌期刊</div>
+  <div class="journal-box">
+    <div class="j-name">《乾坤财税观察》 <span>主编：洪淳宇</span></div>
+    <div class="j-desc">
+      创刊于2026年5月，值公司成立二十周年之际正式创刊。<br>
+      每月10日制作、15日发布，全年12期。<br>
+      以专业视角解读最新财税政策，帮助企业主和管理者掌握合规要点。
+    </div>
+    <div class="j-detail">
+      <div class="row"><span class="lbl">创刊时间</span>2026年5月（二十周年特辑）</div>
+      <div class="row"><span class="lbl">出版周期</span>每月1期</div>
+      <div class="row"><span class="lbl">内容架构</span>卷首语·焦点·案例·政策·行业·Q&A</div>
+      <div class="row"><span class="lbl">首期主题</span>发票合规正负面清单：十条重要红线</div>
+    </div>
+  </div>
+</div>
+
+<!-- 服务特色 -->
+<div class="card">
+  <div class="card-title">服务特色</div>
+  <div class="list-item"><span class="icon">✅</span>二十载行业积淀 — 自2006年起持续服务企业</div>
+  <div class="list-item"><span class="icon">✅</span>内外资双线服务 — 熟悉不同企业类型合规要求</div>
+  <div class="list-item"><span class="icon">✅</span>产学研一体化 — 期刊+工具+实务综合能力</div>
+  <div class="list-item"><span class="icon">✅</span>专业实干团队 — 具备实操经验和持续学习能力</div>
+</div>
+
+<!-- 关联机构 -->
+<div class="card">
+  <div class="card-title">关联机构</div>
+  <div class="list-item"><span class="icon">⚖️</span><div><strong>宇守信投资管理咨询（北京）有限公司</strong><br><span style="font-size:12px;color:#888">企业财税顾问 · 税务合规与筹划 · 创始人：洪淳宇<br>🌐 sparrow528.github.io/tax-membership/</span></div></div>
+</div>
+
+<div class="footer-note">
+  <p>北京乾坤生会计师事务所有限责任公司</p>
+  <p style="margin-top:4px;color:#ccc">2006 — 2026 · 二十周年</p>
+</div>
+
+</div>
+</body>
+</html>

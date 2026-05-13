@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>宇守信咨询 · 公司简介</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:#f5f7fa;color:#333;padding:16px 16px 40px
+}
+.page{max-width:480px;margin:0 auto}
+
+/* 封面卡片 */
+.cover-card{
+  background:linear-gradient(135deg,#7c3aed 0%,#6d28d9 50%,#b8860b 100%);
+  border-radius:20px;padding:40px 24px 32px;text-align:center;
+  color:#fff;margin-bottom:16px;position:relative;overflow:hidden
+}
+.cover-card::before{
+  content:'';position:absolute;top:-40px;right:-40px;
+  width:120px;height:120px;border-radius:50%;
+  background:rgba(255,255,255,.05)
+}
+.cover-card .logo-img{font-size:48px;margin-bottom:12px}
+.cover-card h1{font-size:24px;font-weight:800;letter-spacing:2px;margin-bottom:4px}
+.cover-card .sub{font-size:13px;opacity:.8;margin-bottom:16px}
+.cover-card .divider{width:50px;height:3px;background:#fbbf24;margin:0 auto 16px;border-radius:2px}
+.cover-card .info-row{display:flex;justify-content:center;gap:12px;font-size:13px;opacity:.85;flex-wrap:wrap}
+.cover-card .info-row span{background:rgba(255,255,255,.1);padding:4px 12px;border-radius:12px}
+
+/* 通用卡片 */
+.card{
+  background:#fff;border-radius:16px;padding:24px 20px;
+  margin-bottom:12px;box-shadow:0 1px 8px rgba(0,0,0,.04)
+}
+.card-title{
+  font-size:17px;font-weight:700;color:#7c3aed;
+  padding-bottom:10px;margin-bottom:14px;
+  border-bottom:2px solid #7c3aed;position:relative
+}
+.card-title::after{
+  content:'';position:absolute;bottom:-2px;left:0;
+  width:40px;height:2px;background:#fbbf24
+}
+
+/* 创始人 */
+.founder-row{display:flex;gap:16px;align-items:flex-start}
+.founder-avatar{
+  width:60px;height:60px;border-radius:50%;
+  background:linear-gradient(135deg,#7c3aed,#b8860b);
+  display:flex;align-items:center;justify-content:center;
+  font-size:28px;flex-shrink:0
+}
+.founder-info{flex:1}
+.founder-info .name{font-size:18px;font-weight:700;color:#1a1a2e;margin-bottom:2px}
+.founder-info .badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.badge{font-size:11px;padding:2px 10px;border-radius:10px}
+.badge.gold{background:#fef3c7;color:#92400e}
+.badge.purple{background:#f3e8ff;color:#7c3aed}
+.founder-info .exp{font-size:13px;color:#666}
+
+/* 数据卡片 */
+.stat-row{display:flex;gap:10px;margin-bottom:14px}
+.stat-item{flex:1;background:#faf5ff;border-radius:12px;padding:14px 8px;text-align:center}
+.stat-item .num{font-size:24px;font-weight:800;color:#7c3aed}
+.stat-item .label{font-size:12px;color:#888;margin-top:2px}
+
+/* 列表 */
+.list-item{
+  display:flex;align-items:flex-start;gap:10px;
+  padding:10px 0;border-bottom:1px solid #f5f5f5;font-size:14px;color:#444
+}
+.list-item:last-child{border-bottom:none}
+.list-item .icon{flex-shrink:0;font-size:18px}
+
+/* 会员表 */
+.mem-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:6px}
+.mem-table th{background:#f5f3ff;padding:8px 10px;text-align:left;font-weight:600;color:#7c3aed;font-size:12px}
+.mem-table td{padding:7px 10px;border-bottom:1px solid #f5f5f5}
+.mem-table tr:last-child td{border-bottom:none}
+.price{font-weight:700;color:#7c3aed}
+
+/* 联系方式 */
+.contact-box{background:#faf5ff;border-radius:12px;padding:16px;text-align:center}
+.contact-box .phone{font-size:20px;font-weight:800;color:#7c3aed;margin-bottom:4px}
+.contact-box .wechat{font-size:14px;color:#666;margin-bottom:8px}
+.contact-box .note{font-size:12px;color:#999}
+
+/* 乾坤生模块 */
+.qiankun-header{
+  background:linear-gradient(135deg,#1a365d 0%,#2a5298 100%);
+  border-radius:20px;padding:28px 20px 20px;text-align:center;
+  color:#fff;margin-bottom:12px
+}
+.qiankun-header h2{font-size:20px;font-weight:800;letter-spacing:1px;margin-bottom:4px}
+.qiankun-header .sub{font-size:12px;opacity:.7}
+.qiankun-header .badge-20{
+  display:inline-block;background:linear-gradient(90deg,#c9a84c,#f0d878);
+  color:#1a365d;font-weight:700;font-size:12px;padding:3px 14px;
+  border-radius:12px;margin-top:10px
+}
+
+/* 尾注 */
+.footer-note{text-align:center;padding:16px;font-size:12px;color:#999}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- 封面 -->
+<div class="cover-card">
+  <div class="logo-img">⚖️</div>
+  <h1>宇守信咨询</h1>
+  <div class="sub">企业财税顾问 · 税务合规与筹划</div>
+  <div class="divider"></div>
+  <div class="info-row">
+    <span>👤 洪淳宇</span>
+    <span>📞 186-0129-4989</span>
+    <span>💬 hongchunyu042896</span>
+  </div>
+</div>
+
+<!-- 创始人 -->
+<div class="card">
+  <div class="card-title">创始人</div>
+  <div class="founder-row">
+    <div class="founder-avatar">👤</div>
+    <div class="founder-info">
+      <div class="name">洪淳宇</div>
+      <div class="badges">
+        <span class="badge gold">协会监事</span>
+        <span class="badge purple">税务师</span>
+        <span class="badge purple">国际审计师</span>
+      </div>
+      <div class="exp">高级管理会计师 · 18年财税实战经验（2008年入行）</div>
+    </div>
+  </div>
+</div>
+
+<!-- 核心数据 -->
+<div class="card">
+  <div class="card-title">核心数据</div>
+  <div class="stat-row">
+    <div class="stat-item"><div class="num">18</div><div class="label">年实战经验</div></div>
+    <div class="stat-item"><div class="num">20</div><div class="label">个在线工具</div></div>
+    <div class="stat-item"><div class="num">5</div><div class="label">级会员体系</div></div>
+    <div class="stat-item"><div class="num">10+</div><div class="label">服务行业</div></div>
+  </div>
+  <div class="list-item"><span class="icon">🏆</span>实战经验 — 处理过大量真实税务稽查案例</div>
+  <div class="list-item"><span class="icon">🏆</span>双资质 — 税务师+国际审计师双视角</div>
+  <div class="list-item"><span class="icon">🏆</span>协会背书 — 协会监事，行业资源丰富</div>
+  <div class="list-item"><span class="icon">🏆</span>本人服务 — 洪淳宇全程亲自对接，非"团队外包"</div>
+</div>
+
+<!-- 会员体系 -->
+<div class="card">
+  <div class="card-title">会员体系</div>
+  <table class="mem-table">
+    <tr><th>等级</th><th>价格</th><th>适合</th></tr>
+    <tr><td>🆓 免费</td><td>¥0</td><td>所有企业</td></tr>
+    <tr><td>🆕 体验卡</td><td>¥999/次</td><td>试用客户</td></tr>
+    <tr><td>🥉 铜级</td><td>¥5,999/年</td><td>营收<500万</td></tr>
+    <tr><td>🥈 银级</td><td>¥29,999/年</td><td>营收500万~5000万</td></tr>
+    <tr><td>🥇 金级</td><td>¥69,999/年</td><td>营收5000万+</td></tr>
+  </table>
+</div>
+
+<!-- 核心服务 -->
+<div class="card">
+  <div class="card-title">核心服务</div>
+  <div class="list-item"><span class="icon">⚡</span><div><strong>紧急4h书面意见</strong><br><span style="font-size:12px;color:#888">稽查通知、重大合同等紧急事项，4小时内出正式意见</span></div></div>
+  <div class="list-item"><span class="icon">📱</span><div><strong>7×12h专属顾问群</strong><br><span style="font-size:12px;color:#888">早8~晚8全年无休，金级2h响应/银级24h</span></div></div>
+  <div class="list-item"><span class="icon">📅</span><div><strong>上门服务</strong><br><span style="font-size:12px;color:#888">银级季度上门，金级每月上门</span></div></div>
+  <div class="list-item"><span class="icon">🛡️</span><div><strong>稽查现场陪护</strong><br><span style="font-size:12px;color:#888">不限次数陪同到场，差旅实报实销</span></div></div>
+  <div class="list-item"><span class="icon">📘</span><div><strong>专项筹划（2项/年）</strong><br><span style="font-size:12px;color:#888">股权架构·并购重组·研发加计·个税优化等</span></div></div>
+  <div class="list-item"><span class="icon">🎓</span><div><strong>高管内训 + 内控手册</strong><br><span style="font-size:12px;color:#888">每年2次定制内训 + 年度内控手册</span></div></div>
+</div>
+
+<!-- 20大工具 -->
+<div class="card">
+  <div class="card-title">🔧 20大在线工具</div>
+  <div style="font-size:13px;color:#666;margin-bottom:10px">全部已部署上线，随时可用</div>
+  <div class="list-item"><span class="icon">🆓</span>免费4个：体检·税负自查·研发自查·发票清单自查</div>
+  <div class="list-item"><span class="icon">🥉</span>铜级3个：风险体检·税负测算·社保个税合规</div>
+  <div class="list-item"><span class="icon">🥈</span>银级6个：现金流·稽查自测·发票自检·汇算清缴·成本分析</div>
+  <div class="list-item"><span class="icon">🥇</span>金级11个：股权检查·并购评估·跨境自检·研发全流程·个税优化·稽查预案·内控自评·优惠自检·雷达图等</div>
+</div>
+
+<!-- 乾坤生 -->
+<div style="margin-top:24px;margin-bottom:12px">
+  <div style="text-align:center;font-size:14px;color:#999;margin-bottom:8px">—— 合作机构 ——</div>
+  <div class="qiankun-header">
+    <h2>北京乾坤生会计师事务所</h2>
+    <div class="sub">2006年成立 · 二十周年</div>
+    <div class="badge-20">⚖️ 审计 · 会计 · 税务</div>
+  </div>
+  <div class="card" style="margin-top:0;border-radius:0 0 16px 16px">
+    <div class="list-item"><span class="icon">📰</span>官方期刊《乾坤财税观察》· 主编：洪淳宇</div>
+    <div class="list-item"><span class="icon">👥</span>联系人：洪钟吉 · 责任会计：洪明子</div>
+    <div class="list-item"><span class="icon">📋</span>服务：审计 · 记账报税 · 税务咨询 · 财税健康检查</div>
+  </div>
+</div>
+
+<!-- 联系方式 -->
+<div class="card">
+  <div class="card-title">📞 联系方式</div>
+  <div class="contact-box">
+    <div class="phone">186-0129-4989</div>
+    <div class="wechat">微信：hongchunyu042896</div>
+    <div class="note">🌐 sparrow528.github.io/tax-membership/</div>
+  </div>
+</div>
+
+<div class="footer-note">
+  <p>宇守信投资管理咨询（北京）有限公司</p>
+  <p style="margin-top:4px;color:#ccc">北京 · 专注企业财税合规与增长</p>
+</div>
+
+</div>
+</body>
+</html>
